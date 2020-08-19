@@ -37,7 +37,6 @@ class User_Manager:
     """)
     return print(f"player_list")
 
-
   def update_player(self):
     latest_id = int(input(f"Enter the ID of the player to update: \n"))
     latest_id = latest_id - 1
@@ -45,9 +44,8 @@ class User_Manager:
     player_to_update = self.player_list[int(latest_id)]
     player_to_update.name = player_name
     return print(f"Your player information has been updated: {player_to_update}")
-    self.show_player()
+    self.show_player() 
 
-   
   def delete_player(self):
     latest_id = int(input(f"Enter the ID of the player to delete: \n"))
     latest_id = latest_id - 1
